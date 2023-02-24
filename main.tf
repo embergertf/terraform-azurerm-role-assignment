@@ -15,12 +15,12 @@
 #----------------------------------
 resource "azurerm_role_assignment" "this" {
   # Required
-  principal_id                           = var.principal_id
-  scope                                  = var.scope
+  principal_id = var.principal_id
+  scope        = var.scope
 
   # Rule = id XOR name
-  role_definition_id                     = var.role_definition_id
-  role_definition_name                   = var.role_definition_name
+  role_definition_id   = var.role_definition_id
+  role_definition_name = var.role_definition_name
 
   # Optional
   name                                   = var.name
